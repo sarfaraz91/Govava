@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf9ec"
+    tools:context="com.example.daniyal.govava.activity.Question_1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Relative1"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CoverImage"
+            android:src="@mipmap/question_1_vector"
+            android:layout_marginTop="20dp" />
+
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="40dp"
+           >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/QuestionCross"
+            android:src="@mipmap/question_cross_icon"
+
+             />
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Relative1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Relative2"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you're confused what to buy, dont \n\t\t\t\t\t worry we'll help you"
+            android:textColor="@color/colorBlack"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Relative2"
+        android:id="@+id/Relative3"
+        android:layout_centerHorizontal="true">
+
+
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:textSize="12dp"
+            android:focusableInTouchMode="false"
+            android:hint="   How old is the person?"
+            android:id="@+id/FullName"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/item"
+            />
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:hint="0-1 (Infant)"
+            android:drawableRight="@mipmap/filter_dropdowm"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/Question1Edit">
+
+
+        </EditText>
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/login_attached" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/FullName">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/login_attached"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative3"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="10dp"
+            android:gravity="center|bottom"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/continuenext"
+                android:paddingBottom="10dp"
+                android:id="@+id/continueNext"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/question_selected_ecllipse"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/question_unselected_ecllipse"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/question_unselected_ecllipse"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/question_unselected_ecllipse"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

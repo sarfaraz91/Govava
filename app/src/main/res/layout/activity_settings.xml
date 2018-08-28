@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniyal.govava.activity.Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_backImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bac" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:text="Settings"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+            <!--        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="29dp"
+                        android:src="@mipmap/gift_icon" />
+        -->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/edit_profile">
+
+        <ImageView
+            android:id="@+id/iv_prof_img"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/sett_edit_profile"
+            />
+
+        <TextView
+
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_prof_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:textColor="@color/colorBlack"
+            />
+
+        <View
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/iv_prof_img"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/seprateeColoer"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/clear_allsearch"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_clearHis"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/sett_clear_history"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_toRightOf="@+id/iv_clearHis"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear search history"
+            android:textColor="@color/colorBlack"
+            />
+
+        <View
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/iv_clearHis"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/seprateeColoer"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl_logOut">
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/sett_logout"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textColor="@color/colorBlack"
+            />
+
+        <View
+            android:layout_below="@+id/iv_logout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/seprateeColoer"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/temImg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/add_btn"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/temImg"
+            android:id="@+id/tv_tem1"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Version"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="0.1"
+            android:textColor="@color/colorBlack"
+            />
+
+
+        <View
+            android:layout_below="@+id/temImg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/seprateeColoer"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

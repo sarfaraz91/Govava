@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:clickable="false"
+    android:focusable="false"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="#fff"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/recentlysearch_recent_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_search"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.7"
+            android:textColor="#202020"
+            android:text="Sneakers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/recentlysearch_arrow_icon"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

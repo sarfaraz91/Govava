@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.daniyal.govava.activity.Show_Selected_Category_Item">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_backImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bac" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/tv_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="22dp"
+                android:text="Home"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textAllCaps="false"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="29dp"
+                android:src="@mipmap/gift_icon" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="-15dp">-->
+
+            <!--<EditText-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:background="@mipmap/search_bar"-->
+                <!--android:drawableLeft="@mipmap/searchbar_search_icon"-->
+                <!--android:drawableRight="@mipmap/searchbar_cross_icon"-->
+                <!--android:hint=" \tSearch by product"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:id="@+id/ed_men_search"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+
+    <com.etsy.android.grid.StaggeredGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/staggeredGridView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:item_margin="8dp"
+        app:column_count="2" />
+
+</LinearLayout>
+
+
+ <!--   <GridView
+        android:numColumns="2"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:stretchMode="columnWidth"
+        android:id="@+id/gridview"></GridView>-->
+
+  <!--  <com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+-->
+
+
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toobarProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeader"
+        android:id="@+id/Linear1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:id="@+id/Relative1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bac"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gift for pets"
+                android:textSize="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sidemenu_mypurchases_notification_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="29dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@mipmap/search_bar"
+            android:hint=" \tSearch by gift"
+            android:drawableLeft="@mipmap/searchbar_search_icon"
+            android:paddingRight="20dp"
+            android:drawableRight="@mipmap/searchbar_cross_icon"
+
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
+

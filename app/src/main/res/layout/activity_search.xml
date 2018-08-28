@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:id="@+id/Relative1">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/back_img"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cross_icon"
+
+                />
+                </RelativeLayout>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeader"
+                app:tabIndicatorColor="#fff"
+                app:tabIndicatorHeight="5dp"
+                app:tabSelectedTextColor="#fffdfe"
+                app:tabTextColor="#000000"
+
+                />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

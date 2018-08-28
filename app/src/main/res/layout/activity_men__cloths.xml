@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.Men_Cloths"
+    android:background="@drawable/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="35dp"
+            android:id="@+id/Relative1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/menu_icon"
+                android:id="@+id/iv_hamburger_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_logo"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="80dp"
+                />
+
+            <!--   <ImageView
+                   android:visibility="gone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/cart_cart_icon"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="20dp"
+                   />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search_bar"
+                android:hint=" \tSearch by product"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:drawableRight="@mipmap/searchbar_cross_icon"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView_menClothsItems"
+        android:numColumns="2"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="-5dp"
+        android:horizontalSpacing="-30dp"
+        android:stretchMode="columnWidth"
+
+        />
+
+
+</LinearLayout>

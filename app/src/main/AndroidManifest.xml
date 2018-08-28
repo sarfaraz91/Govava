@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daniyal.govava">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:name=".Utils.GoVava"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Gift_for_Pets"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.Contacts" />
+        <activity
+            android:name=".activity.HomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name=".activity.HomeShowAll"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Men"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ItemDetails"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FilterActivity"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DemoActivity"
+            android:label="@string/title_activity_demo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Pets_Activity"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.Show_Selected_Category_Item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.Help_Contacts"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".activity.Settings"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.HomeCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".HomeFragments"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Category"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FavouritesActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.EditProfile"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".activity.ShowMoreItems"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

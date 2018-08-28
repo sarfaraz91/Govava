@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="@color/colorActivityBackground"
+    tools:context="com.example.daniyal.govava.activity.Pets_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_backImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bac" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:text="Favourites"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+            <!--        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="29dp"
+                        android:src="@mipmap/gift_icon" />
+        -->
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/menu_icon"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-25dp">
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/search_bar"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:drawableRight="@mipmap/searchbar_cross_icon"
+                android:hint=" \tSearch by product"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ed_fav_search"
+                android:textColor="@color/colorBlack"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/gridView_favourites"
+        android:numColumns="2"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+
+        >
+
+    </GridView>
+
+</LinearLayout>

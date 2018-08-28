@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.Men">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeader"
+                android:paddingBottom="35dp"
+                android:id="@+id/Relative1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bac"
+                    android:id="@+id/MenBack"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="27dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEN"
+                    android:id="@+id/MenHeading"
+                    android:textSize="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sidemenu_mypurchases_notification_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="29dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/search_bar"
+                    android:focusableInTouchMode="false"
+                    android:hint=" \tSearch by product"
+                    android:drawableLeft="@mipmap/searchbar_search_icon"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:drawableRight="@mipmap/searchbar_cross_icon"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENS FASHION"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="0dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pets_tab" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROM"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$120.00"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/mensitem_watch"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/Menimg1"
+                            android:layout_marginTop="37dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="DISCOVER OUR"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="108dp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WATCHES"
+                            android:id="@+id/MenText1"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="119dp"
+                            android:textColor="@color/colorBlack" />
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pets_tab" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROM"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$120.00"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/mensitem_shoes"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img2"
+                            android:layout_marginTop="37dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="DISCOVER OUR"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="108dp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SHOES"
+                            android:textSize="12dp"
+                            android:id="@+id/MenText2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="119dp"
+                            android:textColor="@color/colorBlack" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="0dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pets_tab" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROM"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$120.00"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/mensitems_belt"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img3"
+                            android:layout_marginTop="37dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="DISCOVER OUR"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="108dp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACCESSORIES"
+                            android:textSize="12dp"
+                            android:id="@+id/MenText3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="119dp"
+                            android:textColor="@color/colorBlack" />
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pets_tab" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROM"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$120.00"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/mensitem_tanktops"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img4"
+                            android:layout_marginTop="37dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="DISCOVER OUR"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="108dp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TANK TOPS "
+                            android:textSize="12dp"
+                            android:id="@+id/MenText4"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="119dp"
+                            android:textColor="@color/colorBlack" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="0dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pets_tab" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROM"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$120.00"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/mensitem_poloshirts"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img5"
+                            android:layout_marginTop="37dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="DISCOVER OUR"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="108dp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="POLO SHIRT"
+                            android:textSize="12dp"
+                            android:id="@+id/MenText5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="119dp"
+                            android:textColor="@color/colorBlack" />
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pets_tab" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROM"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$120.00"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/mensitem_jersy"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/img6"
+                            android:layout_marginTop="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="DISCOVER OUR"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="108dp"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="POLO SHIRT"
+                            android:textSize="12dp"
+                            android:id="@+id/MenText6"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="119dp"
+                            android:textColor="@color/colorBlack" />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-60dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/filter_btn"
+                android:id="@+id/MenFilterButton"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

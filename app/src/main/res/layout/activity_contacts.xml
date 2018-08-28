@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.activity.Contacts">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="25dp"
+            android:id="@+id/Relative1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cross_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact List"
+                android:textSize="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorWhite"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search_bar"
+                android:focusableInTouchMode="false"
+                android:hint=" \tSearch contact"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:drawableRight="@mipmap/searchbar_cross_icon"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+<ListView
+    android:layout_marginTop="10dp"
+    android:id="@+id/list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:listitem="@layout/contacts_list_item"
+
+    />
+
+
+
+</LinearLayout>

@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.activity.HomeScreen"
+    android:background="@color/colorActivityBackground">
+
+
+    <LinearLayout
+        android:background="@color/colorActivityBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="25dp"
+            android:id="@+id/Relative1">
+
+            <RelativeLayout
+                android:id="@+id/iv_hamburger_icon"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/menu_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_logo"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="80dp"
+                />
+
+         <!--   <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cart_cart_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                />-->
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp">
+
+            <EditText
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/search_bar"
+                android:hint=" \tSearch by product"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:paddingLeft="20dp"
+                android:paddingRight="30dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/ed_search"
+                android:focusableInTouchMode="true"
+                />
+
+            <RelativeLayout
+                android:id="@+id/clear_text"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/searchbar_cross_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@color/colorActivityBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/colorActivityBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:id="@+id/HomeCategories"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/rv_horizontal"
+        tools:listitem="@layout/home_rv_items"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+   <!--<HorizontalScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="7dp"
+           >
+
+
+     &lt;!&ndash;  <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+&ndash;&gt;
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+
+
+           <RelativeLayout
+
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:id="@+id/HomeMen"
+               android:src="@mipmap/men"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Men"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               >
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/women" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/teen"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/art"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/baby"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/beauty"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/books"
+               />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/cell_phones"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/clothing"
+               />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/electronics"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/food"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/gifts_registry"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/health"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/home"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/industrial_scientific"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/jewelry"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/miscellaneous"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/movies_tvshows"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/music"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/office"
+               />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/party_occasions"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/patio_garden"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/personal_care"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/pets"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/photo_center"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/seasonal"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/sports"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/toys"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="5dp"
+               android:src="@mipmap/video_games"
+               />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Women"
+                   android:layout_centerInParent="true"
+                   android:textColor="@color/colorBlack"
+                   android:layout_marginTop="150dp"
+                   />
+           </RelativeLayout>
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+       </RelativeLayout>
+
+   &lt;!&ndash;    </RelativeLayout>&ndash;&gt;
+
+   </HorizontalScrollView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginTop="18dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HANDPICKED BY GOVAVA"
+            android:textStyle="bold"
+            android:id="@+id/Homehandpicked"
+            android:layout_weight="4"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/HomeShowmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="Show more >>"
+            android:textColor="@color/colorHeader" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rl_img1"
+                android:background="#ffff"
+            >
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="110dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mensitem_poloshirts" />
+                <!--android:layout_width="170dp"
+                android:layout_height="160dp"-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rl_img2"
+            >
+            <!--android:background="#8bea80fc"-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM"
+                android:id="@+id/From"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$60.00"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_below="@id/From"
+                android:id="@+id/tv_price"
+                android:textStyle="normal"
+                android:layout_marginLeft="10dp"
+
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summer Women \nLong Sleeve"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_name"
+                android:textStyle="normal"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+          <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_service"
+                android:layout_below="@id/tv_price"
+                android:layout_marginLeft="20dp"
+                android:textSize="10sp"
+                android:layout_marginTop="110dp"/>-->
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+                android:background="#ffff"
+
+                >
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/mensitem_poloshirts"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rl_img22"
+            >
+            <!--android:background="#81ffab00"-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM"
+                android:id="@+id/From2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$60.00"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_below="@id/From2"
+                android:id="@+id/tv_price2"
+                android:textStyle="normal"
+                android:layout_marginLeft="10dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summer Women \nLong Sleeve"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_name2"
+                android:textStyle="normal"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_below="@id/tv_price2"
+                android:id="@+id/tv_service2"
+                android:layout_marginLeft="20dp"
+                android:textSize="10sp"
+                android:layout_marginTop="90dp"/>
+-->
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="335dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#ffff"
+
+                >
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mensitem_poloshirts"
+
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="335dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                >
+                <!--android:background="#813f51b5"-->
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FROM"
+                    android:id="@+id/From3"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$60.00"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_below="@id/From3"
+                    android:id="@+id/tv_price3"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summer Women \nLong Sleeve"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:id="@+id/tv_name3"
+                    android:textStyle="normal"
+                    android:maxLines="4"
+                    android:ellipsize="end"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+             <!--   <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_below="@id/tv_price3"
+                    android:id="@+id/tv_service3"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="220dp"
+                    />-->
+
+
+
+
+
+            </RelativeLayout>
+
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM"
+                android:layout_below="@id/image2"
+                android:id="@+id/From2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$200.00"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_below="@id/From2"
+                android:id="@+id/tv_price2"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="30dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017 Fashion Travel \nCanvas Laptop Bag"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_below="@id/tv_price2"
+                android:id="@+id/tv_name2"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="30dp"
+                android:textStyle="normal"
+                android:layout_marginTop="45dp"
+                />
+
+-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+

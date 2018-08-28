@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@mipmap/pets_tab"
+        android:id="@+id/container"
+        >
+
+
+        <!--<ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pets_tab" />
+    -->
+
+
+        <ImageView
+            android:id="@+id/iv_petsimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pets_dog" />
+
+
+
+        <TextView
+
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_petsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="15 Images"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

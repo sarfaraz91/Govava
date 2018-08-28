@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "298305881883",
+    "firebase_url": "https://govava-d85a5.firebaseio.com",
+    "project_id": "govava-d85a5",
+    "storage_bucket": "govava-d85a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298305881883:android:81411c24fa4f849c",
+        "android_client_info": {
+          "package_name": "com.example.daniyal.govava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298305881883-vldfnpaiu0fc6trlgrh34nsfisne99mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEYgDz8ZbYrcBbstsr4FoW7Tud4hPRB5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

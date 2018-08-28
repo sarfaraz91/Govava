@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf9ec"
+    tools:context="com.example.daniyal.govava.activity.Details">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHeader"
+                android:paddingBottom="25dp"
+                android:id="@+id/Relative1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bac"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="27dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textSize="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="80dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sidemenu_mypurchases_notification_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="29dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/Linear1"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:src="@mipmap/payment_details_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:text="New Mens's Crocodile Faux Analog Watch"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:text="MYR2 will be charged for order below minimum order"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Linear2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Linear1"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/payment_details_visa"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/payment_details_mastercard"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/payment_details_paypal"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Linear2"
+        android:id="@+id/RelativeLayout1"
+
+        >
+
+
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="\t\t Card Number"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:id="@+id/FullName"
+            android:background="@color/colorWhite"
+            />
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/FullName"
+            android:id="@+id/EmailAddress"
+            android:hint="\t\t MM/YY"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            />
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="\t\t CVC"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_below="@id/EmailAddress"
+            android:id="@+id/Password"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            />
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="\t\t Country"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_below="@id/Password"
+            android:id="@+id/ConfirmPassword"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="\t\t Address"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_below="@id/ConfirmPassword"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Adress" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="\t\t Phone Number"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_below="@id/Adress"
+            android:background="@color/colorWhite"
+            android:id="@+id/PhoneNumber"
+            android:layout_marginTop="10dp" />
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/registration_attached"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/FullName"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_gravity="right"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/registration_attached"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/buyitnow_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/PhoneNumber"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay $120.00"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/PhoneNumber"
+            android:textColor="@color/colorWhite"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

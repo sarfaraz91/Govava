@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    tools:context="com.example.daniyal.govava.activity.RegistrationActivity"
+    >
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/imgcover"
+        android:src="@drawable/registration_cover"
+        android:scaleType="fitStart" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+
+                    android:src="@drawable/registration_profile_image"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/upload_image"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/upload_img"
+                android:layout_width="96dp"
+                android:layout_height="100dp" />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Emma Watson"-->
+                <!--android:id="@+id/RegName"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textSize="20dp"-->
+                <!--android:fontFamily="bolt"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="EmmaWatson@gmail.com"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/RegEmail"-->
+                <!--android:textSize="12dp"-->
+                <!--android:fontFamily="bolt"-->
+                <!--/>-->
+
+        </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="250dp"
+            android:id="@+id/RelativeLayout1"
+
+            >
+
+
+
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Full Name"
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@mipmap/username_icon"
+                    android:paddingRight="30dp"
+                    android:id="@+id/FullName"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:drawablePadding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    />
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@mipmap/envelope_icon"
+                    android:layout_below="@id/FullName"
+                    android:id="@+id/EmailAddress"
+                    android:hint="Email Address"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:drawablePadding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+
+                    />
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:drawableLeft="@mipmap/password_icon"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_below="@id/EmailAddress"
+                    android:id="@+id/Password"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+
+                    />
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Confirm Password"
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@mipmap/password_icon"
+                    android:paddingRight="30dp"
+                    android:layout_below="@id/Password"
+                    android:id="@+id/ConfirmPassword"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:drawablePadding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    />
+
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Address"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:drawableLeft="@mipmap/location_icon"
+                    android:layout_below="@id/ConfirmPassword"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Adress"
+                    android:textColor="@color/colorBlack"
+                    android:drawablePadding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+
+                    />
+
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Phone Number"
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@mipmap/phone_icon"
+                    android:paddingRight="30dp"
+                    android:layout_below="@id/Adress"
+                    android:background="@color/colorWhite"
+                    android:id="@+id/PhoneNumber"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:drawablePadding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/registration_attached"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/FullName"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_gravity="right"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/registration_attached"
+                />
+        </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeLayout1"
+            android:paddingBottom="15dp"
+            android:layout_centerHorizontal="true"
+            >
+
+
+
+
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/signup_btn"
+                android:adjustViewBounds="true"
+                android:scaleType="fitEnd"
+                android:layout_marginTop="30dp"
+                android:id="@+id/RegImgSign"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:textColor="@color/colorWhite"
+                android:scaleType="fitEnd"
+                android:text="Sign Up"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:id="@+id/RegSign"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/RegImgSign"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitEnd"
+                android:text="Already have an account"
+                android:textSize="15dp"
+                android:id="@+id/RegHaveAccount"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

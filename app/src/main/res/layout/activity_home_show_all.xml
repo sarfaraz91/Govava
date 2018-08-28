@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.activity.HomeShowAll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="35dp"
+            android:id="@+id/Relative1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bac"
+                android:id="@+id/ShowAllBck"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_logo"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="80dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sidemenu_mypurchases_notification_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search_bar"
+                android:hint=" \tSearch by product"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:drawableRight="@mipmap/searchbar_cross_icon"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APPARELS"
+            android:id="@+id/HomeShowApparels"
+            android:textStyle="bold"
+            android:layout_weight="4.5"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show more >>"
+            android:id="@+id/Showmore"
+            android:textStyle="bold"
+            android:layout_weight=".5"
+            android:layout_gravity="right"
+            android:textColor="@color/colorHeader"
+            />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:id="@+id/Relative2"
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/image1"
+                    android:src="@mipmap/home_handpickbygovava_one"
+                    />
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_handpickbygovava_three"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/From2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_handpickbygovava_two"
+                    android:layout_below="@id/image1"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/Linear1"
+                android:layout_below="@id/Relative2"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAMERAS"
+                    android:id="@+id/HomeShowCamera"
+                    android:textStyle="bold"
+                    android:layout_weight="4.5"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show more >>"
+                    android:textStyle="bold"
+                    android:id="@+id/HomeshowShowmore"
+                    android:layout_weight=".5"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorHeader"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Linear1"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/imag_camera1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_showall_four"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="10dp"
+                    />
+
+                    <ImageView
+                        android:id="@+id/img_camera2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/home_showall_five"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-60dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/filter_btn"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

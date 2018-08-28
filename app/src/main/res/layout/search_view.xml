@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:id="@+id/ed_pets_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/search_bar"
+            android:drawableLeft="@mipmap/searchbar_search_icon"
+            android:drawablePadding="10dp"
+            android:hint=" Search by name"
+            android:text=""
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/searchbar_cross_icon" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="14dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/recent_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:background="#fff">
+
+
+        </ListView>
+
+        <TextView
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/clear_search"
+            android:paddingLeft="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="CLEAR RECENT SEARCHES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

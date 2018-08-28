@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <!--<RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_img2"
+        android:background="#ffff"
+        >
+
+        <ImageView
+            android:layout_centerInParent="true"
+
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img_product"
+            android:src="@mipmap/mensitem_poloshirts"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FROM"
+            android:id="@+id/From"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$60.00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_below="@id/From"
+            android:id="@+id/tv_price"
+            android:textStyle="normal"
+            android:layout_marginLeft="20dp"
+            android:textColor="#808080"
+            />
+
+
+        <com.etsy.android.grid.util.DynamicHeightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_below="@id/img_product"
+            android:id="@+id/tv_name"
+            android:textStyle="normal"
+            android:layout_marginLeft="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#808080"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_below="@+id/img_product"
+            android:id="@+id/tv_service"
+            android:text="Summer Women \nLong Sleeve"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:textColor="#808080"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="normal"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

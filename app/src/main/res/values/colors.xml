@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cb9b2b</color>
+    <color name="colorPrimaryDark">#b38825</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBrown">#f79400</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorHeader">#cb9b2b</color>
+    <color name="colorRed">#ff160e</color>
+    <color name="colorActivityBackground">#fdf9ec</color>
+    <color name="seprateeColoer">#eae6d9</color>
+    <color name="coloryellow">#FFD600</color>
+    <color name="colorGry">#cccccc</color>
+    <color name="colorss">#e4e2e2</color>
+
+</resources>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.daniyal.govava.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="35dp">
+
+            <ImageView
+                android:id="@+id/drawerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:src="@mipmap/menu_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="22dp"
+                android:src="@mipmap/home_logo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/cart_cart_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search_bar"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:drawableRight="@mipmap/searchbar_cross_icon"
+                android:focusableInTouchMode="false"
+                android:hint=" \tSearch by product"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/HomeMen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@mipmap/home_categories_tab_one" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="25dp"
+                        android:src="@mipmap/home_categories_tab_two" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:src="@mipmap/home_categories_tab_three" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@mipmap/home_categories_tab_one" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/HomeCategories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="1dp"
+                        android:text="CATEGORIES"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginTop="140dp"
+                        android:text="MEN"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="140dp"
+                        android:text="WOMEN"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <TextView
+            android:id="@+id/Homehandpicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="4"
+            android:text="HANDPICKED BY GOVAVA"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/HomeShowmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="Show more >>"
+            android:textColor="@color/colorHeader"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/home_handpickbygovava_one" />
+
+                <TextView
+                    android:id="@+id/From"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="FROM"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/FromPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/From"
+                    android:layout_marginLeft="30dp"
+                    android:text="$60.00"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite"/>
+
+
+                <TextView
+                    android:id="@+id/LongText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/FromPrice"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Summer Women \nLong Sleeve"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/LongText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LongText1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Loose Chiffon Blouse Clothes"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/home_handpickbygovava_three" />
+
+                <TextView
+                    android:id="@+id/From3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="100dp"
+                    android:text="FROM"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/From3"
+                    android:layout_marginRight="35dp"
+                    android:text="$4038.00"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/LongText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/Price3"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="35dp"
+                    android:text="1979 Custom\nBuilt Motor\nCycles"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/SmallText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/LongText4"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Suzuki bikes"
+                    android:textColor="@color/colorWhite" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@mipmap/home_handpickbygovava_two" />
+
+                <TextView
+                    android:id="@+id/From2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="FROM"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/FromPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/From2"
+                    android:layout_marginLeft="30dp"
+                    android:text="$200.00"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:id="@+id/LongText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/FromPrice2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="2017 Fashion Travel \nCanvas Laptop Bag"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
+

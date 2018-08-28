@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniyal.govava.activity.Help_Contacts">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_backImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bac" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/tv_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:text="Help &amp; Contact"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textAllCaps="false"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="29dp"
+                android:src="@mipmap/gift_icon" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="We’re here to help you."
+        />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/help_contact_des"
+
+        />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/dot"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call us"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=" (Mon to Sun 5AM to 10PM)"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:textStyle="italic"
+       android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="  00923132456568"
+        android:textColor="@color/colorHeader"/>
+
+    <LinearLayout
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/dot"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email us"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=" (24/7 response)"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="  support@govava.com"
+        android:textColor="@color/colorHeader"/>
+
+
+
+</LinearLayout>

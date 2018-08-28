@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniyal.govava.activity.Show_Selected_Category_Item">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="25dp">
+
+            <ImageView
+                android:id="@+id/iv_backImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/bac" />
+
+            <TextView
+                android:id="@+id/tv_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:text="Pets"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="29dp"
+                android:src="@mipmap/gift_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/search_bar"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:drawableRight="@mipmap/searchbar_cross_icon"
+                android:focusableInTouchMode="false"
+                android:hint=" \tSearch by gift"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView_selectedCategory"
+        android:numColumns="2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    
+
+</LinearLayout>

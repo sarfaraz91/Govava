@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@mipmap/pets_tab"
+        >
+
+
+        <TextView
+
+            android:id="@+id/tv_lbl_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tv_lbl_price"
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="9sp"
+            />
+        <ImageView
+
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/unselected_heart" />
+
+
+        <ImageView
+            android:id="@+id/iv_item_img"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pets_dog" />
+
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/iv_item_img"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_com_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="15 Images"
+                android:textColor="@color/colorBlack"
+                android:textSize="9sp" />
+
+
+            <TextView
+                android:id="@+id/tv_itemName"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="15 Imagesfhgdhgfhdf
+fdhdfhdfgf
+fghgfhjdfjkghkfjhgjkhgjkdfhgjdfhgjkdfhgjkdhgjkdfhgjkdfhgjkdfhgjkdfh"
+                android:textColor="@color/colorBlack"
+                android:textSize="9sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

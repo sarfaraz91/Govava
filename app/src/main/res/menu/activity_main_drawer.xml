@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/nav_Home"
+        android:icon="@mipmap/sidemenu_home_icon"
+        android:title="@string/nav_Home"
+        />
+
+    <!--<item
+        android:id="@+id/nav_Notification"
+        android:icon="@mipmap/sidemenu_notification_icon"
+        android:title="@string/nav_Notification"
+        />-->
+
+    <item
+        android:id="@+id/nav_WhatToBuy"
+        android:icon="@drawable/sidemenu_what_to_buy_icon"
+        android:title="@string/nav_WhatToBuy"
+        />
+
+        <item android:id="@+id/nav_MY_GOVAVA"
+            android:title="MY GOVAVA"
+
+            >
+            <menu>
+                    <item
+                        android:id="@+id/nav_Pets"
+                        android:icon="@drawable/sidemenu_pets_icon"
+                        android:title="@string/nav_Pets"
+                        />
+
+                    <item
+                        android:id="@+id/nav_Favorites"
+                        android:icon="@mipmap/sidemenu_favourites_icon"
+                        android:title="@string/nav_Favorites"
+                        />
+
+                    <item
+                        android:id="@+id/nav_Categories"
+                        android:icon="@mipmap/sidemenu_categories_icon"
+                        android:title="@string/nav_Categories"
+                        />
+
+                    <item
+                        android:id="@+id/nav_Settings"
+                        android:icon="@mipmap/sidemenu_setting_icon"
+                        android:title="@string/nav_Settings"
+                        />
+
+                    <item
+                        android:id="@+id/nav_HelpContact"
+                        android:icon="@mipmap/sidemenu_help_and_contact_icon"
+                        android:title="@string/nav_HelpContact"
+                        />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

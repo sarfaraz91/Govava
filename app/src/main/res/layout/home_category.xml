@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground"
+    tools:context="com.example.daniyal.govava.activity.Show_Selected_Category_Item">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeader"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_backImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/menu_icon" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:text="Men"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textAllCaps="false"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="29dp"
+                android:src="@mipmap/gift_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-25dp">
+
+            <EditText
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/search_bar"
+                android:drawableLeft="@mipmap/searchbar_search_icon"
+                android:hint="Search by product"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/ed_men_search"
+                android:textColor="@color/colorBlack"
+                android:focusable="false"
+                />
+
+            <RelativeLayout
+                android:id="@+id/clear_text"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@mipmap/searchbar_cross_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_below="@+id/header"
+        android:id="@+id/gridView_menItems"
+        android:numColumns="3"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        tools:listitem="@layout/men_items"
+
+        />
+
+    <ImageButton
+        android:visibility="invisible"
+        android:id="@+id/filter_btn"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/filter_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/colorWhite"
+        android:background="@mipmap/sidemenu_bg"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextAppearance="@style/NavDrawerTextStyle"
+        app:menu="@menu/activity_main_drawer"
+        />
+
+</android.support.v4.widget.DrawerLayout>
